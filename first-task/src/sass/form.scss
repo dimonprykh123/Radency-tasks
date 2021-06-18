@@ -1,0 +1,44 @@
+@import "mixins";
+
+#show-form {
+  @include btn(white, #f9a825)
+}
+
+form {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  * {
+    margin: 5px;
+  }
+
+  textarea {
+    padding: 5px;
+    width: 100%;
+    resize: none;
+    @include inputLine(200px, 12px)
+  }
+
+  input[type="date"] {
+    width: 200px;
+    @include inputLine(35px, 6px)
+  }
+
+  input[type="text"] {
+    @include inputLine(35px, 6px)
+  }
+
+  select {
+    width: 200px;
+    @include inputLine(35px, 6px)
+  }
+
+  input[type="submit"] {
+    @include btn(white, #4caf50)
+  }
+
+  input[type="reset"] {
+    @include btn(white, #f44336)
+  }
+}
