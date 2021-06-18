@@ -1,0 +1,33 @@
+.hide {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  * {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 30px;
+}
+
+
+
+

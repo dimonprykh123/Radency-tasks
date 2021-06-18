@@ -1,0 +1,24 @@
+@mixin btn($clr,$bc) {
+  border-radius: 6px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: $clr;
+  background-color: $bc;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transition: 0.3s;
+    background-color: darken($bc, 20%);
+  }
+}
+
+@mixin inputLine($height,$br) {
+  height: $height;
+  border-radius: $br;
+  border-style: solid;
+  &:focus {
+    outline: none;
+  }
+}
